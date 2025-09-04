@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ethan's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div id="header">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
         <nav>
-            <img src="images/logo.png" alt="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+          <img src="images/logo.png" alt="logo" />
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
         <div class="header-text">
-            <p>Master's Student in Computer Science</p>
-            <h1>Hi, I'm <span>Ethan</span><br>Makishima</h1>
+          <p>Master's Student in Computer Science</p>
+          <h1>Hi, I'm <span>Ethan</span><br />Makishima</h1>
         </div>
+      </div>
     </div>
-</div>
-</body>
+    <!-- ----------about---------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              My name is Ethan, and I am a second-year master's student at the
+              University of California, Santa Cruz, pursuing a degree in
+              Computer Science and Engineering. I only have one quarter of
+              school left and will complete my degree by December of 2025. As I
+              am finishing up soon, I am exploring my options in the job market,
+              and am interested in Autonomous Vehicles, Robotics, and AI/ML.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Python</span><br />Designing Backend</li>
+                <li><span>C++</span><br />Coding Language</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2025 - Current</span><br />Software Research Assistant
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2025</span><br />MS from UCSC</li>
+                <li><span>2024</span><br />BS from UCSC</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+          for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+          }
+          for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+  </body>
 </html>
