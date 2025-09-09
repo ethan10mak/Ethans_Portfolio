@@ -10,6 +10,7 @@
       src="https://kit.fontawesome.com/5ba8668bf3.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   </head>
 
   <body>
@@ -52,31 +53,31 @@
             </p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
+              <p class="tab-links active-link" onclick="opentab('experience')">
                 Experience
               </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('leadership')">Leadership & Activities</p>
             </div>
-            <div class="tab-contents active-tab" id="skills">
+            <div class="tab-contents active-tab" id="experience">
               <ul>
-                <li><span>Python</span><br />Designing Backend</li>
-                <li><span>C++</span><br />Coding Language</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>2025 - Current</span><br />Software Research Assistant
-                </li>
+                <li><span>March 2025 - Current</span><br />Software Research Assistant, UCSC</li>
+                <li><span>March 2025 - June 2025</span><br />Teaching Assistant, UCSC</li>
+                <li><span>August 2024 - September 2024</span><br />Software Engineering Intern, Aikitech Inc.</li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
               <ul>
-                <li><span>2025</span><br />MS from UCSC</li>
-                <li><span>2024</span><br />BS from UCSC</li>
+                <li><span>2025</span><br />Master of Science in Computer Science from UCSC</li>
+                <li><span>2024</span><br />Bachelor of Science in Computer Science from UCSC</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="leadership">
+              <ul>
+                <li><span>September 2020 - April 2025</span><br />UCSC Men's Volleyball Team, Team Captain</li>
+                <li><span>September 2023 - June 2025</span><br />Student Athlete Advisory Committee(SAAC)</li>
               </ul>
             </div>
           </div>
@@ -84,33 +85,100 @@
       </div>
     </div>
 
-    <!-- --------------------services----------------- -->
-    <div id="services">
+    <!-- --------------------technical skills-------------------- -->
+    <div id="skills">
       <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Design</h2>
-            <p>Creating visually appealing and user-friendly websites.</p>
-            <a href="#">Learn more</a>
+        <h1 class = "sub-title">Technical Skills</h1>
+        <div class="card-list">
+          <div class="skills-card">
+            <h3>Languages</h3>
+            <p>Programming & Markup</p>
+            <div class="skills-list">
+              <span class="skill">
+            <i class="devicon-python-plain colored"></i>Python</span>
+              <span class="skill">
+            <i class="devicon-c-original colored"></i>
+          C</span>
+              <span class="skill">
+            <i class="devicon-java-plain colored"></i>
+          Java</span>
+              <span class="skill">
+            <i class="devicon-javascript-plain colored"></i>
+          JavaScript</span>
+              <span class="skill">
+            <i class="devicon-cplusplus-plain colored"></i>
+          C++</span>
+              <span class="skill">
+            <i class="devicon-html5-plain colored"></i>
+          HTML</span>
+              <span class="skill">
+            <i class="devicon-css3-plain colored"></i>
+          CSS</span>
+              <span class="skill">
+            <i class="devicon-azuresqldatabase-plain colored"></i>
+          SQL</span>
+              <span class="skill">
+            <i class="devicon-matlab-plain colored"></i>
+          MATLAB</span>
+            </div>
           </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>UI/UX Design</h2>
-            <p>Creating visually appealing and user-friendly websites.</p>
-            <a href="#">Learn more</a>
+          <div class="skills-card">
+            <h3>Frameworks/Tools</h3>
+            <p>Technologies</p>
+            <div class="skills-list">
+              <span class="skill">
+            <i class="devicon-github-original"></i>
+              Github</span>
+              <span class="skill">
+            <i class="devicon-react-original colored"></i>
+          React</span>
+              <span class="skill">
+            <i class="devicon-reactnative-original colored"></i>
+          React Native</span>
+              <span class="skill">
+            <i class="devicon-mongodb-plain colored"></i>
+          MongoDB</span>
+              <span class="skill">
+            <i class="devicon-docker-plain colored"></i>
+          Docker</span>
+              <span class="skill">
+            <i class="devicon-linux-plain"></i>
+          Linux</span>
+              <span class="skill">
+            <i class="devicon-firebase-plain colored"></i>
+          Firebase</span>
+              <span class="skill">
+            <i class="devicon-xcode-plain colored"></i>
+          XCode</span>
+              <span class="skill">
+            <i class="devicon-confluence-plain colored"></i>
+          Confluence</span>
+              <span class="skill">
+            <i class="devicon-swift-plain colored"></i>
+          Swift/SwiftUI</span>
+              <span class="skill">
+            <i class="devicon-vscode-plain colored"></i>
+          VScode</span>
+            </div>
           </div>
-          <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>App Design</h2>
-            <p>Creating visually appealing and user-friendly websites.</p>
-            <a href="#">Learn more</a>
+          <div class="skills-card">
+            <h3>Skills</h3>
+            <p>Practical</p>
+            <div class="skills-list">
+              <span class="skill"><i class="fa-solid fa-code"></i>Unit Testing</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>Sprint Planning</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>Clean Coding</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>AI Workflow</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>Documentation</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>CI/CD</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>UI/UX</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>System Design</span>
+              <span class="skill"><i class="fa-solid fa-code"></i>Computer Architecture</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <!-- -------------------portfolio----------------- -->
     <div id="portfolio">
       <div class="container">

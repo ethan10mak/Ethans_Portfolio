@@ -4,6 +4,8 @@
     --accent-color: #0066ff;
     --muted-text-color: #ababab;
     --object-background: #262626;
+    --darker-object-background: #1a1a1a;
+    --accent-color-less-bright: #0051cc;
     
 }
 *{
@@ -27,6 +29,7 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .container{
     padding: 10px 10%;
@@ -173,45 +176,53 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
-
-/* ----------services---------- */
-#services{
+/* ----------technical skills---------- */
+#skills{
     padding: 30px 0;
 }
-.services-list{
+.card-list{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
+.skills-card{
     background: var(--object-background);
-    padding: 40px;
-    font-size: 13px;
-    font-weight: 300;
+    padding: 30px;
+    font-weight: 300;;
     border-radius: 10px;
+    text-align: center;
     transition: background 0.3s, transform 0.3s;
 }
-.services-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-.services-list div h2{
-    font-size: 30px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-.services-list div a{
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 12px;
-    margin-top: 20px;
-    display: inline-block;
-}
-.services-list div:hover{
+.skills-card:hover{
     background: var(--accent-color);
     transform: translateY(-10px);
 }
+
+.skills-card ul{
+    list-style: none;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.skill{
+    background: var(--darker-object-background);
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.3s;
+}
+.skill:hover{
+    background: var(--accent-color-less-bright);
+}
+.skill i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+
 /* ----------portfolio---------- */
 #portfolio{
     padding: 50px 0;
@@ -368,6 +379,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        cursor: pointer;
     }
     nav ul{
         display: block;
@@ -397,7 +409,7 @@ nav .fa-solid{
     .about-col-1, .about-col-2{
         flex-basis: 100%;
     }
-    about-col-1{
+    .about-col-1{
         margin-bottom: 30px;
     }
     .about-col-2{
